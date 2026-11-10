@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook at Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo">Cook at Home</a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#allergy">Allergy Filter</a>
+        <a href="#favorites">Favorites</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <p class="subtitle">WELCOME TO COOK AT HOME</p>
+        <h1>Find your next<br>favorite recipe</h1>
+        <p>Simple, delicious meals made for everyone.</p>
+        <a href="#recipes" class="main-btn">Explore recipes</a>
+    </section>
+
+    <section class="search-section" id="recipes">
+        <h2>Discover recipes</h2>
+        <input type="text" id="searchInput"
+               placeholder="Search for a recipe...">
+
+        <div class="categories" id="categories">
+            <button class="category-btn active" data-category="All">All</button>
+            <button class="category-btn" data-category="Breakfast">Breakfast</button>
+            <button class="category-btn" data-category="Lunch">Lunch</button>
+            <button class="category-btn" data-category="Dinner">Dinner</button>
+            <button class="category-btn" data-category="Dessert">Dessert</button>
+        </div>
+
+        <div class="allergy-box" id="allergy">
+            <h3>Allergy filter</h3>
+            <p>Select products you want to avoid:</p>
+
+            <div class="allergy-options">
+                <label><input type="checkbox" value="Milk"> Milk</label>
+                <label><input type="checkbox" value="Eggs"> Eggs</label>
+                <label><input type="checkbox" value="Nuts"> Nuts</label>
+                <label><input type="checkbox" value="Gluten"> Gluten</label>
+                <label><input type="checkbox" value="Fish"> Fish</label>
+                <label><input type="checkbox" value="Soy"> Soy</label>
+            </div>
+
+            <button id="filterBtn">Apply filter</button>
+            <button id="resetBtn" class="reset-btn">Reset</button>
+        </div>
+
+        <div class="recipe-grid" id="recipeGrid"></div>
+        <p id="emptyMessage" hidden>No recipes found. Try another search.</p>
+    </section>
+
+    <section class="favorites-section" id="favorites">
+        <h2>Your favorite recipes</h2>
+        <div class="recipe-grid" id="favoritesGrid"></div>
+    </section>
+</main>
+
+<div class="modal" id="recipeModal" hidden>
+    <div class="modal-content">
+        <button class="close-btn" id="closeModal">×</button>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<footer>
+    <h2>Cook at Home</h2>
+    <p>Made with love for food lovers.</p>
+    <p>© 2026 Cook at Home</p>
+</footer>
+
+</body>
+</html>

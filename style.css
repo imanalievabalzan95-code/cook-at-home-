@@ -1,0 +1,191 @@
+
+/* ЖАЛПЫ ДИЗАЙН */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background: #fffaf5;
+    color: #38332f;
+}
+
+/* HEADER */
+header {
+    padding: 25px 5%;
+    background: #fff;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+}
+
+header h1 {
+    font-size: 34px;
+    color: #d98268;
+}
+
+nav a {
+    font-size: 18px;
+    margin: 0 12px;
+    text-decoration: none;
+    color: #51443e;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d98268;
+}
+
+/* НЕГІЗГІ ТАҚЫРЫП */
+h1, h2, h3 {
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 32px;
+    color: #51443e;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+/* ІЗДЕУ ЖОЛЫ */
+input, select {
+    font-size: 17px;
+    padding: 14px 18px;
+    border: 1px solid #eadbd2;
+    border-radius: 12px;
+    background: white;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #d98268;
+}
+
+/* БАТЫРМАЛАР */
+button {
+    font-size: 17px;
+    padding: 13px 24px;
+    border: none;
+    border-radius: 12px;
+    background: #d98268;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #bd6d55;
+    transform: translateY(-2px);
+}
+
+/* РЕЦЕПТ КАРТОЧКАЛАРЫ */
+.recipe-card {
+    background: white;
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.recipe-card h3 {
+    font-size: 23px;
+    margin: 15px 0 8px;
+}
+
+.recipe-card p {
+    font-size: 17px;
+    color: #756961;
+}
+
+/* КАТЕГОРИЯЛАР */
+.category, .category-btn {
+    padding: 12px 22px;
+    border-radius: 25px;
+    background: #f8e7df;
+    color: #805849;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category:hover, .category-btn:hover {
+    background: #e9b7a5;
+}
+
+/* АЛЛЕРГИЯ БӨЛІМІ */
+.allergy-filter {
+    background: #fff0e9;
+    padding: 25px;
+    border-radius: 18px;
+    margin: 25px 0;
+}
+
+.allergy-filter label {
+    font-size: 17px;
+}
+
+/* МОДАЛЬДЫ ТЕРЕЗЕ */
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 650px;
+    font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    padding: 35px 20px;
+    background: #f8e7df;
+    color: #66534a;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* МОБИЛЬДІК НҰСҚА */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav a {
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .recipe-card img {
+        height: 190px;
+    }
+
+    button {
+        width: auto;
+        max-width: 100%;
+    }
+}
